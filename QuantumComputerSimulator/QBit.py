@@ -5,7 +5,6 @@ class QBit:
     zeroprobability= 50
     oneprobability = 50
     
-#comment
     def __init__(self, initvalue):
         if (initvalue == 0):
             self.zeroprobability = 100
