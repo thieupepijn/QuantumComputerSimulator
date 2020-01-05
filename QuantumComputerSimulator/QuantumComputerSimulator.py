@@ -1,7 +1,8 @@
 from QBit import QBit
 
 
-bit = QBit(1)
-bit.had()
+bit1 = QBit(1)
+bit1.had()
 for _ in range(25):
-    print(bit.read())
+   print(bit1.read())
+
