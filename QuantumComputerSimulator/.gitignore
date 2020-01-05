@@ -1,3 +1,3 @@
-## gitignore file, Ignore all files in folder .__pycache
+## gitignore file, Ignore all files in folder __pycache
 
-.__pycache__/
+__pycache__/
