@@ -47,7 +47,7 @@ class QBit:
                 self._phasesequal = True
             elif not (self._phasesequal):
                 self._zeroprobability = 0
-                self._oneprobability = 1
+                self._oneprobability = 100
                 self._phasesequal = True
 
             

@@ -1,8 +1,32 @@
 from QBit import QBit
 
 
-bit1 = QBit(1)
-bit1.had()
-for _ in range(25):
-   print(bit1.read())
+def MakeAndEncodeQBits(length):
+    qbits = []
+    for _ in range(length):
+        qbit = QBit(1)
+        qbit.had()
+        qbits.append(qbit)
+    return qbits
+
+
+def ReadQBits(qbits):
+    for qbit in qbits:
+        qbit.read()
+
+def DecodeAndShowQBits(qbits):
+    for qbit in qbits:
+        qbit.had()
+        print(qbit.read(), end='')
+    print('')
+
+qbits= MakeAndEncodeQBits(10)
+#ReadQBits(qbits)
+DecodeAndShowQBits(qbits)
+
+
+
+
+
+
 
