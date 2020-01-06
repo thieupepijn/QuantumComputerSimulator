@@ -24,6 +24,9 @@
     <Compile Include="QBit.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="QuantumCommunicationWithSpyDetectionDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="QuantumComputerSimulator.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
