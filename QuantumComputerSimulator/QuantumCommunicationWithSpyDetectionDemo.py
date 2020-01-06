@@ -1,3 +1,4 @@
+import os
 from QBit import QBit
 
 
@@ -30,9 +31,22 @@ class QuantumCommunicationWithSpyDetectionDemo:
         return ''.join(qbitsOUT)
 
     def DoDemo(self):
+        demo = 'Initializing and encoding list of 10 qbits, all with initial value 1'
+        demo += os.linesep
         qbits = self.MakeAndEncodeQBits(10)
+        demo += 'A spy is reading the qbits'
+        demo += os.linesep
         self.ReadQBits(qbits)
-        return self.DecodeQBits(qbits)    
+        demo += 'Decoding the qbits'
+        demo += os.linesep
+        decoded =  self.DecodeQBits(qbits)
+        demo += decoded
+        demo += os.linesep
+        if ('0' in decoded):
+            demo += 'Decoded qbits contain 1 or more zeros, so spy is detected'
+        else:
+            demo += 'Decoded qbits contain only ones so spy is NOT detected'        
+        return demo    
 
 
     
